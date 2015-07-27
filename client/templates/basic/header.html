@@ -9,14 +9,23 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{pathFor 'sitesIndex'}}"><img src="/svg/logo.svg"/> {{app "name"}}</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="{{pathFor 'sitesIndex'}}">{{_ "Home"}}</a></li>
+                
+<ul class="nav navbar-nav navbar-left" style="margin-top:13px;">
+<a class="navbar-brand" href="{{pathFor 'sitesIndex'}}"><img src="/images/smalllogo.png"  style="margin-top:-20px;" /> </a>
+
+<li><a href="{{pathFor 'sitesIndex'}}">{{_ "Home"}}</a></li>
+<li><a href="{{pathFor 'sitesIndex'}}">About</a></li>
+<li><a href="{{pathFor 'sitesIndex'}}">News</a></li>
+<li><a href="{{pathFor 'sitesIndex'}}">Diary</a></li>
+<li><a href="{{pathFor 'sitesIndex'}}">Wiki</a></li>
+<li><a href="{{pathFor 'sitesIndex'}}">Pictures</a></li>
+<li><a href="{{pathFor 'sitesIndex'}}">Google Group</a></li>
+<li><a href="{{pathFor 'sitesIndex'}}">Trello Board</a></li>
+<li><a href="{{pathFor 'sitesIndex'}}">Membership</a></li>
+
                     <li><a href="{{pathFor 'usersIndex'}}">{{_ "Users"}}</a></li>
                     <li><a href="{{pathFor 'postsIndex'}}">{{_ "Posts"}}</a></li>
+
                     {{#if app 'activateMugen'}}
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mugen <span class="caret"></span></a>
@@ -43,15 +52,6 @@
                         <a href="{{pathFor 'usersLogin'}}">{{_ "Login"}}</a>
                         {{/if}}
                     </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{app "defaultLanguage"}}<span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#" class="lang" data-lang="en">English(en)</a></li>
-                            <li><a href="#" class="lang" data-lang="zh-CN">China(zh-CN)</a></li>
-                            <li class="divider"></li>
-                            <li id="btnLogout"><a href="#">More</a></li>
-                        </ul>
-		    </li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
